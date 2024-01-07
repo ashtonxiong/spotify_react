@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import HomePage from "./components/HomePage";
+import LoginPage from "./components/LoginPage";
 
 function App() {
   const CLIENT_ID = "e6b84f273b7b44e082fb7fd319d4a217";
@@ -43,20 +44,13 @@ function App() {
     console.log("TEST DATA", data);
   };
 
+  const handleChildData = (data) => {
+    setToken(data);
+  };
+
   return (
     <div className="App">
-      {token ? (
-        <HomePage />
-      ) : (
-        <div>
-          <h1>Spotify React</h1>
-          <a
-            href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}
-          >
-            Login
-          </a>
-        </div>
-      )}
+      {token ? <HomePage /> : <LoginPage getToken={handleChildData} />}
     </div>
   );
 }

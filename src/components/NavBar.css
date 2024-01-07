@@ -1,0 +1,62 @@
+.nav-bar {
+/* background-color: #1db954;  */
+background-color: #212121;
+flex-direction: row;
+display: flex;
+/* border: 2px solid yellow; */
+/* height: 90px; */
+}
+
+.items {
+flex-direction: row;
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: 100%;
+}
+
+.spotify-image {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 90px;
+/* height: 100%; */
+width: 90px;    
+/* border: 2px solid yellow; */
+}
+
+.image-container {
+display: flex;
+align-items: center;
+padding-left: 2%;
+max-height: 100%;
+}
+
+
+.profile-container{ 
+width: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-right: 2%;
+}
+
+.profile-picture {
+height: 50px;
+width:50px;
+border-radius: 50%;
+border: 6px solid #121212
+}
+
+.spotifyButton {
+background-color: #1db954;
+color: #FFFFFF;
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+border-radius: 20px;
+}

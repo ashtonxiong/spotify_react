@@ -1,0 +1,37 @@
+/* YourComponent.css
+.nav-bar {
+    background-color: yellow; 
+    flex-direction: row;
+    display: flex;
+    border-color: red;
+    border-width: 2px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.items {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 80px
+}
+  
+.spotifyButton {
+    background-color: #1db954;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+   */
